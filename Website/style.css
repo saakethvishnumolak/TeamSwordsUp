@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+}
+
+/* Main section */
+#main {
+    background-image: url(./images/baseball-field.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+#main::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#main .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#main h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#main h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+/* main section end */
+
+
+
+/* Description section */
+
+#description .description {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#description .description-top {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#description .description-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#description .description-title span {
+    color: crimson;
+}
+
+#description .description-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#description .description-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./images/basketball-court.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#description .description-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .4;
+    z-index: -1;
+}
+
+#description .description-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#description .description-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#description .description-item h2 span {
+    color: crimson;
+}
+
+#description .description-item p {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+#description .description-item .feature-list {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+#description .description-item p {
+    color: white;
+    text-align: left;
+}
+
+/* Description section end */
+
+/* Video section */
+#video .video-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#video .videowrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+/* Video section end */
+
+/* About us section  */
+
+#about .about {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+
+#about .bio-top::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#about .title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#about .title span {
+    color: crimson;
+}
+
+#about .bio-bottom {
+    width: 100%;
+    text-align: center;
+}
+
+#about .bio-bottom p {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+/* About us section end */
+
+
+/* footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.brand h1 span {
+    color: crimson;
+}
+
+
+/* footer end  */
+
+/* keyframes */
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+/* keyframes end */
+
+/* media query  */
+@media only screen and (min-width: 768px) {
+    
+
+    /* main  */
+    #main h1 {
+        font-size: 7rem;
+    }
+    /* main end  */
+
+    /* description section */
+    #description .description-bottom .description-item {
+        flex-basis: 45%;
+        margin: 1.5%;
+    }
+    /* description section end  */
+
+    /* about */
+
+    /* about us */
+}
+
+@media only screen and (min-width: 1200px) {
+    #description .description-bottom .description-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+/* media query end  */
+
