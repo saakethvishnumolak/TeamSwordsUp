@@ -1,5 +1,5 @@
 # TeamSwordsUp
-## What is the software product?  (e.g. an accounting app, a dating app, a sports app, etc.)
+## What is the software product?
 
 The software application would be a sport-statistic tracker application that could be pitched to NCAA colleges and both semi-pro and professional sports teams. The software would serve the purpose of tracking information connected to sports-related activities, providing in-depth data to the user. Data can vary from sport to sport, and record information regarding their performance in-game, with statistics regarding average player speed, shot-percentage, winrate, and more.  
 This would include a user interface which is the front-end of the software that allows users to interact with the application. It includes screens, buttons, menus and other elements making it easy for users to view information accordingly. The core functionality of the software product involves tracking sports-related activities. This may include tracking overall distance, capturing statistics and monitoring progress over time. 
