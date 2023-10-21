@@ -36,6 +36,84 @@ p {
     letter-spacing: .05rem;
 }
 
+/* Header section  */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .logo span {
+    color: crimson;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+header ul li ul {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    padding: 10px;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 200px;
+}
+
+header ul li ul li a {
+    padding: 10px 10px;
+    font-size: 10px;
+}
+
+header ul li ul li a:hover {
+    background-color: crimson;
+}
+/* Header section end  */
+
 /* Main section */
 #main {
     background-image: url(./images/baseball-field.jpg);
@@ -187,10 +265,6 @@ p {
     line-height: 1.8rem;
 }
 
-#description .description-item p {
-    color: white;
-    text-align: left;
-}
 
 /* Description section end */
 
