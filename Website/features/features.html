@@ -11,5 +11,192 @@
         <h1>Features</h1>
     </header>
 
+    <!-- Video section  -->
+    <section id="video">
+        <div class="video-container">
+            <div class="videowrapper">
+                <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2619912/sp/261991200/embedIframeJs/uiconf_id/45753661/partner_id/2619912?iframeembed=true&playerId=kaltura_player&entry_id=1_ksetyz7q&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_4h70xpy4" width="800" height="570" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="CS-400 - Swords Up Project 2 Video"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Video section end -->
+
+    <!-- Feature section -->
+    <section id="features">
+
+        <!-- Feature One -->
+        <div class="feature-one">
+            <h3>Feature 1 - Team Roster Creation, Configuration, and Location Services</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li><b>As a coach I need to be able to have all of my player’s statistics and profiles accessible under a team profile, because I’ll be frequently visiting my player’s profiles, and it’s a hassle to have to manually search for each person in a database with hundreds of users</b></li>
+                <li><b>As an athlete, I need to be able to compare my team’s overall statistics against teams from other schools because that will help me and my teammates understand what skills we as a collective excel at, and where we may need to improve when preparing for a future game</b></li>
+                <li>As a coach I need to be able to add new players to the team’s profile, because my players will frequently be joining and leaving the team, and I need all of my team’s information to be up to date</li>
+                <li>As a coach I need to be able to remove retired players to the team’s profile, because my players will frequently be joining and leaving the team, and I need all of my team’s information to be up to date</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>Team accounts representing college level teams need to be verified via their coach’s university email, in order to prevent fraudulent accounts from being created</li>
+                <li>All team accounts need to be able to display their coach’s full name and email within the account’s profile page, in order for players to ensure that they are seeing and joining the right team</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based off Andrew and Payton’s scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Feature two -->
+        <div class="feature-two">
+            <h3>Feature 2 - Player Profile Creation, Configuration, and Location Services</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li>As a basketball coach, I want to record and monitor key player performance metrics such as shooting accuracy, dribbling skills, and speed during player development sessions, helping me provide personalized coaching feedback</li>
+                <li>As an athlete, I need to have the ability to regularly incorporate new data into my statistics because it will help me quickly see how my statistics have improved or worsened throughout the season, keeping me up to my performance trends</li>
+                <li>As a coach I want to be able to clearly identify the players in my team via having their full name and a profile picture visible, because two players on the same team may have similar sounding names, and it would be easier to tell the difference between the two accounts with these features in place</li>
+                <li>As a coach I need to be able to find other users via a user ID because people’s names often sound similar, and I want to ensure that I’m adding the right player onto my team</li>
+                <li>As a coach I need to be able to request other users to join my team, because there’s always a chance that I may mistype the ID, and could add the wrong account into my team</li>
+                <li>As a basketball coach, I want to be able to share player performance statistics and profiles with the coaching staff so that we can collectively assess and discuss which players to recruit</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>College level athletes need to connect a student email to their accounts, in order to gain access to the NCAA’s bank of statistics </li>
+                <li>All Player Profiles should require a user to use their first and last name, plus a profile picture, as the app won’t function as intended if players were as anonymous as they are on social media. </li>
+                <li>In order to verify each user’s identity, all accounts will have an auto generated 8 to 10 digit ID number, which needs to be provided to coaches and team managers outside of the app when adding users to their teams</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based on Alex, Payton, and Andrew’s scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Feature Three  -->
+        <div class="feature-three">
+            <h3>Feature 3 - History of Player Stats</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li>As a basketball coach, I want to access historical performance data for my team, so I can compare current performance to past games and identify trends that may affect our strategy</li>
+                <li>As a basketball coach, I want the app to provide detailed player statistics, including points scored, rebounds, assists, and defensive plays, to assess a player's overall performance during recruitment events</li>
+                <li>As a basketball coach, I want the app to provide a clear visualization of each player's performance metrics, making it easier to identify trends, strengths, and areas for improvement in post-match analysis sessions</li>
+                <li>As an athlete, I need to be able to compare my past averages against my current ones because it will help me easily see how each new game has affected my overall stats, allowing me to see key points throughout the year where my skills really improved</li>
+                <li>As a trainer, I want to record my players' progress in the app so I can track my trainees' growth over time</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>We would need to determine how much of a player’s history our app can record - eventually, we’ll need to cut each user’s history off, since we’ll run out of storage</li>
+                <li>We would also need to see how in-depth player history needed to be - should we only keep track of certain stats from past years, such as season averages, compared to a detailed record the player may need for the current season?</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based on Alex, Eric, and Andrews’s scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Feature Four  -->
+        <div class="feature-four">
+            <h3>Feature 4 - Player Stat</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li>As a coach I need to be able to see my player’s average scores, because it will help me get a better idea on how each player compares with one another, and help me determine what positions they should be playing</li>
+                <li>As a coach I need to be able to see my team’s average in certain statistics, because this will help me make better comparisons against other teams overall</li>
+                <li>As an athlete, I need to be able to compare my past averages against my current ones because it will help me easily see how each new game has affected my overall stats, allowing me to see key points throughout the year where my skills really improved</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>We would need to ensure that the app had the capacity to calculate most, if not all, types of statistics relating to several major sports - this feature could take a while to implement, making it one that might not be fully ready by the initial launch</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based on Peyton and Andrew's scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Feature Five  -->
+        <div class="feature-five">
+            <h3>Feature 5 - Team and Player Data Comparison</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li>As an athlete, I want to be able to compare my statistics against my teammates because it will give me an idea of how well I am doing compared to the rest of my team</li>
+                <li>As a coach, I want to utilize the app to research opponent lineups and their stats in order to better prepare my players for future games</li>
+                <li>As a coach, I want to keep track of any opposing bench players that can have a big impact on the game so that my players will be prepared for what to expect when they come into the game</li>
+                <li>As a coach, I want to compile and examine the stats of the opposing players to estimate a lineup and plan appropriately</li>
+                <li>As a coach, I want to evaluate the matches by comparing player statistics with those of the players on the other team</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>College level teams and player profiles need to connect a university email to their accounts, in order to gain access to the NCAA’s bank of statistics</li>
+                <li>Lower level leagues won’t need an email to be verified, and will be visible to any minor league teams and users with data sharing on</li>
+                <li>Players and Teams of any kind should not be able to see and compare another profile’s stats unless they themselves are sharing their data - one-sided data sharing is inherently unfair, and may make users uncomfortable with using this feature</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based on Andrew and Lily's Scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Feature Six  -->
+        <div class="feature-six">
+            <h3>Feature 6 - Team and Player Video Uploads</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li>As an athlete, I want to be able to upload videos of myself in game, because I want to be able to celebrate my wins within my profile</li>
+                <li>As a coach, I want to be able to upload video clips of players during practice so my players can review them and improve their technique</li>
+                <li>As a trainer, I want to access and watch video footage of my players performances, so I can pinpoint areas of improvements</li>
+                <li>As an athlete, I want to be able to see videos of another team’s games, because it can give me a better idea of how my opponents may play as a group</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>We would need to ensure that all material uploaded was appropriate, meaning that a moderation program or team would need to be put in place beforehand</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based on Andrew, Eric, and Lily’s scenarios</li>
+            </ul>
+        </div>
+
+        <!-- Feature Seven -->
+        <div class="feature-seven">
+            <h3>Feature 7 - Data Import/Export Functions</h3>
+            <hr>
+            <h4>Description:</h4>
+            <ul>
+                <li>As a basketball coach, I want the sports tracking app to export player data to a spreadsheet or other analysis tools for more in-depth analysis and discussion during coaching staff meetings</li>
+                <li>As a trainer, I want my players to wear wearables so I can get info about my players' movements for in-depth analysis</li>
+                <li>As a trainer, I want to be able to quickly move data from wearables to the app so I can review and analyze the data</li>
+                <li>As a coach I want to be able to import player data from other apps into a player account, because I may have new players join the app with pre-existing data, and need to get that information in as soon as possible</li>
+                <li>As a coach I need to ensure that uploaded data is accurate, because I don’t want the transfer process to accidentally modify or erase data, and give my players incorrect statistics</li>
+            </ul>
+            <hr>
+            <h4>Constraints:</h4>
+            <ul>
+                <li>We would need to make sure that the app could connect properly with most kinds of wearable technology, which could be difficult depending on the brand</li>
+                <li>We would also need to ensure that the app could read and record data from various sources, as well as export said data in various formats, which could add extra layers of complexity</li>
+            </ul>
+            <hr>
+            <h4>Comments:</h4>
+            <ul>
+                <li>Based on Alex, Payton, and Eric’s Scenarios</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Feature section end  -->
+
 </body>
 </html>

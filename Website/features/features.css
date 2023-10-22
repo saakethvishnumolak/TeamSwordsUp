@@ -14,3 +14,25 @@ header {
     letter-spacing: .2rem;
     text-align: center;
 }
+
+#video .videowrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+#features ul li {
+    margin-bottom: 0.8em;
+}
+
+#features .feature-one, .feature-two, .feature-three, .feature-four, .feature-five, .feature-six, .feature-seven {
+    font-size: 1rem;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0,0,0,1);
+    padding: 50px;
+    margin-top: 75px;
+}
