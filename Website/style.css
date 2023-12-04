@@ -50,6 +50,11 @@ header {
     z-index: 100000;
 }
 
+header.sticky {
+    padding: 25px 100px;
+    background: black;
+}
+
 header .logo {
     position: relative;
     font-weight: 700;
@@ -112,7 +117,10 @@ header ul li ul li a {
 header ul li ul li a:hover {
     background-color: crimson;
 }
+
 /* Header section end  */
+
+
 
 /* Main section */
 #main {
