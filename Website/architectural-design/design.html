@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Arch Design
+    </header>
+
+    <div class="principles">
+        <h3>Principles - Description/Components</h3>
+        <hr>
+        <h4>Profile Differentiation</h4>
+        <ul>
+            <li>It should be possible to configure what type of profile you manage, and safely/accurately set up both types</li>
+            <li><b>Components:</b> Profile role selection, Sport/Sport type selection, Collegiate account verification, Profile creation and display UI</li>
+        </ul>
+
+        <hr>
+
+        <h4>Data Management</h4>
+        <ul>
+            <li>It should be possible to upload and delete user data in the app</li>
+            <li><b>Components:</b> Profile-realted data storage, Statistic storage, Data timestamping, Statistic data date tracking, Video data storage, Video data sharing, 3rd party import and export; Data management UI, Video streaming UI</li>
+        </ul>
+
+        <hr>
+
+        <h4>Comparisons and Calculations</h4>
+        <ul>
+            <li>It should be possible to compare the data of different profiles against one another, and receive the results in an easy to read fashion</li>
+            <li><b>Components:</b> Comparison type selection - player to player or team to team, Statistic data retrieval, Internal calculations, Comparison results UI, Collegiate account verification</li>
+        </ul>
+
+        <hr>
+
+        <h4>Security and Privacy</h4>
+        <ul>
+            <li>It should be possible to prevent user data from being lost or stolen within the software to the best of the program's ability</li>
+            <li><b>Components:</b> Collegiate personal data defenses, Video-related data defenses, Data backups via cloud based storage systems, Account login and password system</li>
+        </ul>
+    </div>
+
+    <div class="arch-section">
+        <h3>Architectural Section - Components</h3>
+        <hr>
+        <h4>App Interface</h4>
+        <ul>
+            <li>Profile creation and display UI, Data management UI, Video streaming UI, Comparison selection and results UI</li>
+        </ul>
+
+        <hr>
+
+        <h4>Internal Data</h4>
+        <ul>
+            <li>Profile-related data storage, Statistic storage</li>
+        </ul>
+
+        <hr>
+
+        <h4>Access and Management</h4>
+        <ul>
+            <li>Comparison type selection - player to self ONLY, Internal calculations, Statistic timestamping, Statistic date tracking, 3rd party import and export</li>
+        </ul>
+
+        <hr>
+
+        <h4>Cloud-based Data Access</h4>
+        <ul>
+            <li>Account login and password system, Comparison type selection - team to team and player to player, Separate user data retrieval, Video data storage, Video data sharing, Internal data backups</li>
+        </ul>
+
+        <hr>
+
+        <h4>Secured Server Data</h4>
+        <ul>
+            <li>Collegiate personal data defenses, Video-related data defenses, Collegiate account verification</li>
+        </ul>
+    </div>
+
+    <div class="dist-arch">
+        <header class="sub-header">
+            Distribution Architecture
+        </header>
+        <div class="img">
+            <img src="../images/dist-arch.png" alt="distribution architecture diagram">
+        </div>
+    </div>
+
+    <header class="sub-header">
+        Narrative
+    </header>
+
+    <div class="narrative">
+        <ul>
+            <li><b>What database will we use?</b>
+                <ul>
+                    <li>Public Cloud based system, with some of the app’s data being stored within the user’s device. The cloud system is planned to be a multi-tenant system, in order to keep database costs low.</li>
+                    <li>While most user data will be kept in a single database, secure information (such as login info, and emails used for authenticating collegiate profiles) will be kept in one of 4-5 separate databases, depending on the user’s timezone when they first create an account.(US Time Zones only) 
+                    </li>
+                </ul>
+            </li>
+
+            <li><b>What delivery platform will we develop for?</b>
+                <ul>
+                    <li>Microsoft Azure - good for setting up businesses with a large number of users, granting the ability to support all of our clients across the US</li>
+                </ul>
+            </li>
+
+            <li><b>What server platform will we use?</b>
+                <ul>
+                    <li>Linux - offers more flexibility than platforms like Windows, through its wider array of languages and open source software.</li>
+                </ul>
+            </li>
+
+            <li><b>What open-source products will be part of the system?</b>
+                <ul>
+                    <li>API, Ubuntu</li>
+                </ul>
+            </li>
+
+            <li><b>What development tools will you use?</b>
+                <ul>
+                    <li>React/nodejs, Docker, Virtual Machine</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cont-arch">
+        <header class="sub-header">
+            Containerization Architecture
+        </header>
+
+        <div class="img">
+            <img src="../images/cont-arch.png" alt="containerization architectur diagram">
+        </div>
+    </div>
+    
+    <div class="interaction-arch">
+        <header class="sub-header">
+            Components Interaction
+        </header>
+
+        <div class="img">
+            <img src="../images/interaction-arch.png" alt="Components interaction diagram">
+        </div>
+    </div>
+
+    <!-- Video section  -->
+
+    <div class="sub-header">
+        Ultimate Video
+    </div>
+    <section id="video">
+        <div class="video-container">
+            <div class="videowrapper">
+                <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/2619912/sp/261991200/embedIframeJs/uiconf_id/45753661/partner_id/2619912?iframeembed=true&playerId=kaltura_player&entry_id=1_ksetyz7q&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_4h70xpy4" width="800" height="570" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="CS-400 - Swords Up Project 2 Video"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Video section end -->
+
+</body>
+</html>
