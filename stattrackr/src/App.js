@@ -33,7 +33,7 @@ class App extends Component {
       //console.log(res.data.data[0])
 
       if(res.data.data[0] === undefined) {
-        alert("This player is injured or hasn't played yet")
+        alert("This player is injured or hasn't played yet or is not a player")
       } else if(res.data.data.length > 1) {
         alert("Please specify the name more")
       } else {
