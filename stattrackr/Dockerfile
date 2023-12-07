@@ -12,6 +12,8 @@ RUN apt-get install npm -y
 
 COPY . . 
 
+RUN npm install react-scripts
+
 RUN npm run build
 
 RUN rm -r /usr/share/nginx/html/*
