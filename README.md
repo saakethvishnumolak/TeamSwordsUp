@@ -28,7 +28,7 @@ Unlike Huddle, or our other competitors, StatTrackr is specifically designed for
 
 ### How to Run Application
 
-Go to project's working directory
-Run docker build . 't website:latest 
-Run docker run -it --rm -d -p 8081:80/tcp -- name stattrackr2 website
-Go to localhost:8080 on any browser
+<li>Go to project's working directory</li>
+<li>Run docker build . 't website:latest </li>
+<li>Run docker run -it --rm -d -p 8081:80/tcp -- name stattrackr2 website</li>
+<li>Go to localhost:8080 on any browser</li>
