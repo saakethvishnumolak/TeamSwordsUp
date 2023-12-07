@@ -98,7 +98,7 @@ header ul li ul {
     display: none;
     position: absolute;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px;
 }
 
 header ul li:hover ul {
@@ -107,6 +107,8 @@ header ul li:hover ul {
 
 header ul li ul li {
     width: 200px;
+    height: 35px;
+    text-decoration: none;
 }
 
 header ul li ul li a {
