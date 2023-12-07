@@ -25,3 +25,10 @@ Sporting performance is becoming increasingly about data and stats which is beco
 
 “For coaches and schools within the NCAA who need an efficient system to keep track of performance-related statistics, StatTrackr is a mobile app built for recording and managing your team’s performance data. 
 Unlike Huddle, or our other competitors, StatTrackr is specifically designed for college teams, and provides unique access to other school’s stats and data. Through StatTrackr, coaches can compare their team’s performance to the competitions, ensuring that your athletes are always ready for game day.”
+
+### How to Run Application
+
+Go to project's working directory
+Run docker build . 't website:latest 
+Run docker run -it --rm -d -p 8081:80/tcp -- name stattrackr2 website
+Go to localhost:8080 on any browser
