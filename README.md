@@ -32,3 +32,4 @@ Unlike Huddle, or our other competitors, StatTrackr is specifically designed for
 <li>Run docker build . -t website:latest </li>
 <li>Run docker run -it --rm -d -p 8081:80/tcp -- name stattrackr2 website</li>
 <li>Go to localhost:8080 on any browser</li>
+<li>Example: type in 'Paul George', it will return his stats, type in 'Saaki Vishnu', it will throw an alert</li>
